@@ -8,19 +8,20 @@
 Summary:	Catalyst::Plugin::Unicode - Unicode aware Catalyst
 #Summary(pl.UTF-8):	
 Name:		perl-Catalyst-Plugin-Unicode
-Version:	0.91
+Version:	0.92
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a8782196979c04b9244533459604aaf4
+# Source0-md5:	5e28abcf49f99e1cbebb317ed336c97a
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Unicode/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Catalyst >= 5.70
 BuildRequires:	perl-IO-stringy
+BuildRequires:	perl-MRO-Compat >= 0.10
 BuildRequires:	perl-Test-use-ok
 BuildRequires:	perl-Test-WWW-Mechanize-Catalyst
 %endif
