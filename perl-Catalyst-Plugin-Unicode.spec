@@ -8,13 +8,13 @@
 Summary:	Catalyst::Plugin::Unicode - Unicode aware Catalyst
 #Summary(pl.UTF-8):	
 Name:		perl-Catalyst-Plugin-Unicode
-Version:	0.92
+Version:	0.93
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5e28abcf49f99e1cbebb317ed336c97a
+# Source0-md5:	f362bfa2ec2bb70378717122e2da018d
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Unicode/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -23,13 +23,13 @@ BuildRequires:	perl-Catalyst >= 5.70
 BuildRequires:	perl-IO-stringy
 BuildRequires:	perl-MRO-Compat >= 0.10
 BuildRequires:	perl-Test-use-ok
-BuildRequires:	perl-Test-WWW-Mechanize-Catalyst
+BuildRequires:	perl-Test-WWW-Mechanize-Catalyst >= 0.56
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-On request, decodes all params from UTF-8 octets into a sequence of 
+On request, decodes all params from UTF-8 octets into a sequence of
 logical characters. On response, encodes body into UTF-8 octets.
 
 # %description -l pl.UTF-8
